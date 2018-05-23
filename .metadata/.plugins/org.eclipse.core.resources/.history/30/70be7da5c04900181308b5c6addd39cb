@@ -1,0 +1,30 @@
+package com.scb.doc;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class DocumentController {
+	
+	@RequestMapping(value="/", produces="text/html")
+	public String index() {
+		return "index";
+	}
+	@RequestMapping(value="/download", produces="text/html")	
+	public byte[] download() {
+		try {
+			System.out.println("TEST ++");
+			Path fileLocation = Paths.get("4_StoryBoard.pdf");
+			byte[] data = Files.readAllBytes(fileLocation);
+			return data;
+		} catch (IOException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+}

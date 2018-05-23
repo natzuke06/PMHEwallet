@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Payment Hub Document Learning</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Last Update</th>
+  </tr>
+  <tr>
+    <td><a href="http://localhost:8080/download?docName=4_StoryBoard.pdf">4_StoryBoard.pdf</a></td>
+    <td>PDF</td>
+    <td>12/12/2018</td>
+  </tr>
+   <tr>
+    <td><a href="http://localhost:8080/download?docName=OOP.ppt">OOP.ppt</a></td>
+    <td>Power Point</td>
+    <td>12/12/2018</td>
+  </tr>
+   <tr>
+    <td><a href="http://localhost:8080/download?docName=SCB Payments Hub_Solution Blueprint_v0.00.53.pptx">SCB Payments Hub_Solution Blueprint_v0.00.53.pptx</a></td>
+    <td>Power Point</td>
+    <td>12/12/2018</td>
+  </tr>
+ 
+</table>
+
+</body>
+</html>
